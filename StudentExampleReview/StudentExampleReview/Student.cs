@@ -6,7 +6,7 @@ namespace StudentExampleReview
 {
     public class Student
     {
-        public int ID { get; set; }
+        public Int64 ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string FavoriteColor { get; set; }
@@ -17,7 +17,7 @@ namespace StudentExampleReview
             LastName = string.Empty;
             FavoriteColor = string.Empty;
         }
-        public Student(int id, string first, string last, string color)
+        public Student(Int64 id, string first, string last, string color)
         {
             ID = id;
             FirstName = first;
