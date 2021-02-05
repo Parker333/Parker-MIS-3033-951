@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Wpf_Participation
+namespace WPF_2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,22 +23,6 @@ namespace Wpf_Participation
         public MainWindow()
         {
             InitializeComponent();
-            txtName.Clear();
-        }
-
-        private void btnStart_Click_1(object sender, RoutedEventArgs e)
-        {
-            Background = Brushes.Blue;
-
-            MessageBox.Show("Please enter your information", "Clicked", MessageBoxButton.OKCancel);
-
-            string birthday = txtBirthday.Text;
-            DateTime result = Convert.ToDateTime(birthday);
-            DateTime now = DateTime.Now;
-            TimeSpan age = now - result;
-
-            MessageBox.Show ($"{txtName} is {age.Days/365}.");
-            lblOutput.Content = ($"{txtName} is {age.Days/365}.");
         }
     }
 }
