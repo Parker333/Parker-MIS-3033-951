@@ -37,8 +37,8 @@ namespace Wpf_Participation
             DateTime now = DateTime.Now;
             TimeSpan age = now - result;
 
-            MessageBox.Show ($"{txtName} is {age.Days/365}.");
-            lblOutput.Content = ($"{txtName} is {age.Days/365}.");
+            MessageBox.Show ($"{txtName} is {age.TotalDays/365}.");
+            lblOutput.Content = ($"{txtName} is {age.TotalDays/365}.");
         }
     }
 }
