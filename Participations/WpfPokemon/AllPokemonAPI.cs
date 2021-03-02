@@ -15,8 +15,6 @@ namespace WpfPokemon
     {
         public string name { get; set; }
         public string url { get; set; }
-        public string sprites { get; set; }
-
         public override string ToString()
         {
             return name;
@@ -29,5 +27,11 @@ namespace WpfPokemon
         public int height { get; set; }
         public int weight { get; set; }
         public string sprites { get; set; }
+    }
+
+    public class FrontBack
+    {
+        public string front { get; set; }
+        public string Back { get; set; }
     }
 }

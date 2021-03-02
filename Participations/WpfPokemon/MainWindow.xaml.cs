@@ -33,7 +33,7 @@ namespace WpfPokemon
             {
                 string json = client.GetStringAsync(url).Result;
 
-                api = JsonConvert.DeserializeObject<AllPokemonAPI>(json);
+                api = JsonConvert.DeserializeObject<AllPokemonAPI>(json); //Basically used as a split
 
             }
 
@@ -45,8 +45,20 @@ namespace WpfPokemon
 
         private void lstPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
             var selectedPokemon = (ResultObject)lstPokemon.SelectedItem;
-            imgSprite.Source = new BitmapImage(new Uri(selectedPokemon.sprites));
+            imgSprite.Source = new BitmapImage(new Uri(selectedPokemon.url));
+
+            Info infomorepokemon;
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(selectedPokemon.url).Result;
+
+                infomorepokemon = JsonConvert.DeserializeObject<Info>(json); 
+
+            } 
+
         }
     }
 }
