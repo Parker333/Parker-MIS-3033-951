@@ -60,5 +60,10 @@ namespace WpfPokemon
             } 
 
         }
+
+        private void btnPokemon_Click(object sender, RoutedEventArgs e)
+        {
+            //I honestly can't figure this out.
+        }
     }
 }

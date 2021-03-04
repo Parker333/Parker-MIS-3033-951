@@ -9,6 +9,7 @@
     <Grid>
         <ListBox x:Name="lstPokemon" HorizontalAlignment="Left" Height="337" Margin="62,31,0,0" VerticalAlignment="Top" Width="298" SelectionChanged="lstPokemon_SelectionChanged"/>
         <Image x:Name="imgSprite" HorizontalAlignment="Left" Height="190" Margin="449,39,0,0" VerticalAlignment="Top" Width="296"/>
+        <Button x:Name="btnPokemon" Content="Pokemon" HorizontalAlignment="Left" Height="55" Margin="500,278,0,0" VerticalAlignment="Top" Width="127" Click="btnPokemon_Click"/>
 
     </Grid>
 </Window>
