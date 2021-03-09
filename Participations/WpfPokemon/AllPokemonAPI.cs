@@ -7,7 +7,6 @@ namespace WpfPokemon
     public class AllPokemonAPI
     {
         public List<ResultObject> results { get; set; }
-        public Info info { get; set; }
 
     }
 
@@ -20,18 +19,5 @@ namespace WpfPokemon
             return name;
         }
 
-    }
-
-    public class Info
-    {
-        public int height { get; set; }
-        public int weight { get; set; }
-        public string sprites { get; set; }
-    }
-
-    public class FrontBack
-    {
-        public string front { get; set; }
-        public string Back { get; set; }
     }
 }

@@ -37,7 +37,7 @@ namespace WpfPokemon
 
             }
 
-            foreach (var item in api.results.OrderBy(x => x.name).ToList())
+            foreach (ResultObject item in api.results.OrderBy(x => x.name).ToList())
             {
                 lstPokemon.Items.Add(item);
             }
@@ -46,24 +46,21 @@ namespace WpfPokemon
         private void lstPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
-            var selectedPokemon = (ResultObject)lstPokemon.SelectedItem;
-            imgSprite.Source = new BitmapImage(new Uri(selectedPokemon.url));
-
-            Info infomorepokemon;
+            ResultObject selectedPokemon = (ResultObject)lstPokemon.SelectedItem;
+            PokemonInfoAPI info;
 
             using (var client = new HttpClient())
             {
-                string json = client.GetStringAsync(selectedPokemon.url).Result;
+                var json = client.GetStringAsync(selectedPokemon.url).Result;
 
-                infomorepokemon = JsonConvert.DeserializeObject<Info>(json); 
+                info = JsonConvert.DeserializeObject<PokemonInfoAPI>(json);
+            }
 
-            } 
+            PokemonInfoWindow wnd = new PokemonInfoWindow();
+            wnd.PopulateWindow(info);
+            wnd.ShowDialog;
 
         }
 
-        private void btnPokemon_Click(object sender, RoutedEventArgs e)
-        {
-            //I honestly can't figure this out.
-        }
     }
 }
