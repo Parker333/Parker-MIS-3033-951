@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wpf_Classes", "Wpf_Classes\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_Web_Browser", "WPF_Web_Browser\WPF_Web_Browser.csproj", "{69141E1B-947E-4762-A512-3DAC2C2CE201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_JSON", "Wpf_JSON\Wpf_JSON.csproj", "{9C374734-ABEC-420D-8DB6-2EEBC643604A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wpf_JSON", "Wpf_JSON\Wpf_JSON.csproj", "{9C374734-ABEC-420D-8DB6-2EEBC643604A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebApplication", "WebApplication\WebApplication.fsproj", "{D0A88DB2-7B5E-4513-8E5D-50D754D64ABD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9C374734-ABEC-420D-8DB6-2EEBC643604A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C374734-ABEC-420D-8DB6-2EEBC643604A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C374734-ABEC-420D-8DB6-2EEBC643604A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A88DB2-7B5E-4513-8E5D-50D754D64ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A88DB2-7B5E-4513-8E5D-50D754D64ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A88DB2-7B5E-4513-8E5D-50D754D64ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A88DB2-7B5E-4513-8E5D-50D754D64ABD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

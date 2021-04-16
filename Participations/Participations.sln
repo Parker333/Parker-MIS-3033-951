@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfPokemon", "WpfPokemon\Wp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSONChuckNorris", "JSONChuckNorris\JSONChuckNorris.csproj", "{71212D65-29FC-4B14-86AB-982FB9F8179C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONGOTQuote", "JSONGOTQuote\JSONGOTQuote.csproj", "{E38CD9C9-FF8C-4DD4-BBA7-3E53AC5F3AD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSONGOTQuote", "JSONGOTQuote\JSONGOTQuote.csproj", "{E38CD9C9-FF8C-4DD4-BBA7-3E53AC5F3AD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Html(P)", "Html(P)\Html(P).csproj", "{77D126D0-5916-43FA-B05E-65A0CA54B52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beginner", "Beginner\Beginner.csproj", "{895E9624-67F9-479D-A1D4-1FCAC2CBF37E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{E38CD9C9-FF8C-4DD4-BBA7-3E53AC5F3AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E38CD9C9-FF8C-4DD4-BBA7-3E53AC5F3AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E38CD9C9-FF8C-4DD4-BBA7-3E53AC5F3AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D126D0-5916-43FA-B05E-65A0CA54B52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D126D0-5916-43FA-B05E-65A0CA54B52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D126D0-5916-43FA-B05E-65A0CA54B52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D126D0-5916-43FA-B05E-65A0CA54B52D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895E9624-67F9-479D-A1D4-1FCAC2CBF37E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895E9624-67F9-479D-A1D4-1FCAC2CBF37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895E9624-67F9-479D-A1D4-1FCAC2CBF37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895E9624-67F9-479D-A1D4-1FCAC2CBF37E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
